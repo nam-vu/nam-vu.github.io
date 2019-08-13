@@ -1,5 +1,0 @@
-name: Nam Vu
-markdown: kramdown
-
-gems:
-  - jekyll-redirect-from
