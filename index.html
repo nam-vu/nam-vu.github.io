@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nam Vu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ffffff;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #000000;
+            }
+        }
+
+        .gif {
+            width: 259px;
+            height: 122px;
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+
+        .gif--light {
+            display: block;
+        }
+
+        .gif--dark {
+            display: none;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .gif--light {
+                display: none;
+            }
+            .gif--dark {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="akira_light.webp" alt="Nam Vu" class="gif gif--light">
+    <img src="akira_dark.webp" alt="Nam Vu" class="gif gif--dark">
+</body>
+</html>
